@@ -12,6 +12,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  overflow-y: hidden;
 }
 
 nav {
@@ -53,7 +54,7 @@ main{
 }
 
 .main-content{
-  background-color: blanchedalmond;
+  background: linear-gradient(rgb(207, 209, 228), rgb(139, 155, 197));
   width: 100%;
   height: 100%;
   display: flex;
@@ -61,16 +62,31 @@ main{
   justify-content: center;
   gap: 10px;
   padding: 10px;
+  padding-bottom: 80px;
 }
 
 .week-of-day{
-  background-color: black;
+  background-color: rgb(251, 246, 239);
   width: calc(100%/3);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 10px 10px 10px;
+  overflow-y: scroll;
+}
+
+.class{
+  width: 100%;
+  min-height: 100px;
+  background-color: brown;
+  margin-top: 10px;
+
 }
 
 
-@media (max-width: 1000px ) {
+@media (max-width: 800px ) {
   nav{
     height: 110px;
   }
