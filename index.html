@@ -1,89 +1,27 @@
-* {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-  border: none;
-}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    
+    <input type="date">
+    <button class="update-date js-update-date">Get Day</button>
+  </nav>
 
-body{
-  max-height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-nav {
-  width: 100%;
-  height: 70px;
-  background-color: lightblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-nav input{
-  font-size: clamp(20px, 4vw ,30px);
-  height: 85%;
-  width: clamp(200px, 32%, 250px );
-  margin: 10px;
-  padding: 10spx;
-  border-radius: 5px;
-
-}
-
-.update-date{
-  font-size: clamp(20px, 4vw ,30px);
-  height: 85%;
-  width: clamp(200px, 24%,200px );
-  margin: 5px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-main{
-  width: 100%;
-  height: 100%;
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-content{
-  background-color: blanchedalmond;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-}
-
-.week-of-day{
-  background-color: black;
-  width: calc(100%/3);
-  height: 100%;
-}
+  <main>
+    <div class="color-code-key"></div>
+    <div class="main-content">
+      <div class="week-of-day day-1"></div>
+      <div class="week-of-day day-2"></div>
+      <div class="week-of-day day-3"></div>
+    </div>
+  </main>
 
 
-@media (max-width: 1000px ) {
-  nav{
-    height: 110px;
-  }
-
-  .week-of-day{
-    width: 100%;
-  }
-
-  .day-1{
-    display: none;
-  }
-
-  .day-3{
-    display: none;
-  }
-}
+  <script src="TimeTable.js"></script>
+</body>
+</html>
