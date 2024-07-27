@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table Planner</title>
+  <link rel="stylesheet" href="Ttsstyles.css">
+</head>
+<body>
+  <nav>
+    <div class="date-selector-main">
+    <div class="date-selector-wrapper">
+      <input type="date" id="date-input" class="date-input" value="2024-07-24">
+      <p class="input-text-warning js-input-date-warn">Select a date to continue!</p>
+    </div>
+
+    <button class="update-date js-update-date">Get Day</button>
+  </div>
+  </nav>
+
+  <div class="extra-info">
+    <p class="extra-info-date js-extra-info-date-1" ></p>
+    <p class="extra-info-date js-extra-info-date-2" ></p>
+    <p class="extra-info-date js-extra-info-date-3" ></p>
+  </div>
+
+  <main>
+    <div class="main-content">
+      <div class="week-of-day day-1 js-day-1"></div>
+      <div class="week-of-day day-2 js-day-2"></div>
+      <div class="week-of-day day-3 js-day-3"></div>
+    </div>
+  </main>
+
+
+  <script type="module" src="TtsScript.js"></script>
+</body>
+</html>

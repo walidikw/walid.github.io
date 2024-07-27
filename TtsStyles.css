@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: hidden;
+}
+
+nav {
+  width: 100%;
+  min-height: clamp(50px, 10vw, 80px);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 1px 9px #14141451);
+  padding: 10px 20px 10px 20px;
+}
+
+.extra-info{
+  background-color: white;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.extra-info-date{
+  width: calc(100% / 3);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.6rem;
+
+}
+
+.date-input{
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  min-width: clamp(100px, 15vw, 150px);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  margin-bottom: 4px;
+  color: black;
+  height: 90%;
+  font-size: 1.4rem;
+  
+
+}
+
+.input-text-warning{
+  display: none;
+  color: rgb(160, 0, 0);
+  width: auto;
+}
+
+.update-date{
+  height: 100%;
+  min-width: clamp(120px, 15vw, 150px);
+  border-radius: 5px;
+  background-color: #DEF2C8;;
+  text-align: center;
+  margin-left: 15px;
+  font-size: 1.6rem;
+}
+
+ .update-date:hover {
+  background-color: #C5DAC1;
+}
+
+.update-date:active{
+  background-color: #9eb09b;
+}
+
+.date-selector-wrapper{
+  height: 100%;
+  min-width: clamp(150px, 15vw, 180px); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.date-selector-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  min-width: clamp(300px, 25vw, 400px);
+  max-width: 500px;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  background-color: c7d1cd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content{
+  background: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  padding-bottom: 160px;
+}
+
+.week-of-day{
+  background-color: transparent;
+  width: calc(100%/3);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 10px 10px 10px;
+  overflow-y: scroll;
+  border-radius: 2px;
+
+}
+
+.week-of-day::-webkit-scrollbar-button{
+  color: black;
+}
+
+.week-of-day::-webkit-scrollbar{
+  width: 0.8vw;
+}
+
+.week-of-day::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+.week-of-day::-webkit-scrollbar-thumb{
+  background-color: #def2c8a5;
+  border-radius: 9px;
+}
+
+.week-of-day::-webkit-scrollbar-thumb:hover{
+  background-color: #898980;
+}
+
+
+
+
+.class{
+  width: 100%;
+  min-height: 150px;
+  background-color: #BCD0C7;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.class-name,
+.class-time,
+.class-teacher {
+  font-size: 1.4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.js-extra-info-date-1{
+  display: line;
+}
+
+.js-extra-info-date-3{
+  display: block;
+}
+
+
+@media (max-width: 800px ) {
+  nav{
+    min-height: clamp(90px, 25vw, 110px);
+  }
+
+  .week-of-day{
+    width: 100%;
+  }
+
+  .day-1{
+    display: none;
+  }
+
+  .day-3{
+    display: none;
+  }
+
+  .js-extra-info-date-1{
+    display: none;
+  }
+
+  .js-extra-info-date-3{
+    display: none;
+  }
+}
